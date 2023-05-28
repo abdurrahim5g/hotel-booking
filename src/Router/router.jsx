@@ -1,39 +1,62 @@
 import { createBrowserRouter } from "react-router-dom";
+import Main from "../Layout/Main";
+import Home from "../Pages/Home/Home";
+import About from "../Pages/About/About";
+import Listings from "../Pages/Listings/Listings";
+import Gallery from "../Pages/Gallery/Gallery";
+import Contact from "../Pages/Contact/Contact";
+import Blogs from "../Pages/Blogs/Blogs";
+import Error from "../Pages/Error/Error";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SignUp/SignUp";
+import SignOut from "../Pages/SignOut/SignOut";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h2>Main</h2>,
+    element: <Main></Main>,
     children: [
       {
         path: "/",
-        element: <h2>Home</h2>,
+        element: <Home></Home>,
       },
       {
         path: "/about",
-        element: <h2>About</h2>,
+        element: <About></About>,
       },
       {
         path: "listings",
-        element: <h2>Listings</h2>,
+        element: <Listings></Listings>,
       },
       {
         path: "/blogs",
-        element: <h2>Blogs</h2>,
+        element: <Blogs />,
       },
       {
         path: "/gallery",
-        element: <h2>Gallery</h2>,
+        element: <Gallery />,
       },
       {
-        path: "/contacts",
-        element: <h2>Contacts</h2>,
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/sign-up",
+        element: <SignUp />,
+      },
+      {
+        path: "/sign-out",
+        element: <SignOut />,
       },
     ],
   },
   {
     path: "*",
-    element: <h2>404 Error</h2>,
+    element: <Error></Error>,
   },
 ]);
 
