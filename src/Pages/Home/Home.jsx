@@ -1,5 +1,6 @@
 import Hero from "../../components/Section/Hero/Hero";
 import RoomListings from "../../components/Section/RoomListings/RoomListings";
+import VideoPopup from "../../components/Section/VideoPopup/VideoPopup";
 
 import "./Home.css";
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div className="home-page">
       <Hero></Hero>
       <RoomListings></RoomListings>
+      <VideoPopup></VideoPopup>
     </div>
   );
 };
