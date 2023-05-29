@@ -40,14 +40,3 @@ const RoomCard = ({ room }) => {
 };
 
 export default RoomCard;
-
-// {
-//     "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-2.jpg",
-//     "title": "Single Apartment",
-//     "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-//     "total_room": 2,
-//     "person": 4,
-//     "bathroom": 2,
-//     "price": 50,
-//     "available": true
-// }
