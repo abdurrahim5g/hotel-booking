@@ -1,0 +1,67 @@
+[
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-1.jpg",
+    "title": "Double Apartment",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  },
+
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-2.jpg",
+    "title": "Single Apartment",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  },
+
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-3.jpg",
+    "title": "Double Suite",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  },
+
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-4.jpg",
+    "title": "Honeymoon Suite",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  },
+
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-5.jpg",
+    "title": "Simple Suite",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  },
+
+  {
+    "img": "https://fivestar.qodeinteractive.com/wp-content/uploads/2017/12/List-feat-img-6.jpg",
+    "title": "Romantic Suite",
+    "details": "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "total_room": 2,
+    "person": 4,
+    "bathroom": 2,
+    "price": 50,
+    "available": true
+  }
+]
