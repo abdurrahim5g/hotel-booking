@@ -1,3 +1,4 @@
+import Facilities from "../../components/Section/Facilities/Facilities";
 import Hero from "../../components/Section/Hero/Hero";
 import RoomListings from "../../components/Section/RoomListings/RoomListings";
 import VideoPopup from "../../components/Section/VideoPopup/VideoPopup";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero></Hero>
       <RoomListings></RoomListings>
       <VideoPopup></VideoPopup>
+      <Facilities></Facilities>
     </div>
   );
 };

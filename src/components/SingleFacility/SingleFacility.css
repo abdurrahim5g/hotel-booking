@@ -1,0 +1,20 @@
+.popup-content h3 {
+  font-size: 30px;
+}
+
+.single-facility-component {
+  display: flex;
+}
+
+.single-facility-component .icon {
+  margin-right: 40px;
+}
+
+.single-facility-component .icon svg {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+.single-facility-component .facility-info h4 {
+  font-size: 18px;
+}

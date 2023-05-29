@@ -1,0 +1,19 @@
+.facility-row {
+  row-gap: 30px;
+}
+
+/* responsive
+=============== */
+@media all and (max-width: 767px) {
+  .single-facility-component .icon {
+    margin-right: 20px;
+  }
+
+  .single-facility-component .icon svg {
+    font-size: 40px;
+  }
+
+  .facility-row {
+    row-gap: 20px;
+  }
+}
