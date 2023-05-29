@@ -16,7 +16,7 @@ const RoomListings = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row " style={{ rowGap: "30px" }}>
           {rooms?.map((room, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <RoomCard room={room}></RoomCard>
