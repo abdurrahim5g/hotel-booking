@@ -1,0 +1,26 @@
+.social-icon-component {
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon-component a {
+  width: 40px;
+  aspect-ratio: 1;
+  text-align: center;
+  display: grid;
+  background: #fd6d00;
+  place-content: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0%;
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.social-icon-component a:hover {
+  background: transparent;
+  color: #fd6d00;
+  /* transform: rotate(360deg); */
+}
