@@ -1,5 +1,6 @@
-import Hero from "../../components/Hero/Hero";
-import RoomListings from "../../components/RoomListings/RoomListings";
+import Hero from "../../components/Section/Hero/Hero";
+import RoomListings from "../../components/Section/RoomListings/RoomListings";
+
 import "./Home.css";
 
 const Home = () => {

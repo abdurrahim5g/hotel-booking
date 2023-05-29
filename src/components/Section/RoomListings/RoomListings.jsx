@@ -1,7 +1,7 @@
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionHeading from "../../SectionHeading/SectionHeading";
 import "./RoomListings.css";
-import rooms from "../../data/rooms.json";
-import RoomCard from "../RoomCard/RoomCard";
+import rooms from "../../../data/rooms.json";
+import RoomCard from "../../RoomCard/RoomCard";
 const RoomListings = () => {
   console.log(rooms);
   return (
