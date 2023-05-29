@@ -8,7 +8,7 @@ const RoomCard = ({ room }) => {
     img,
     title,
     details,
-    total_rooms,
+    total_room,
     person,
     bathroom,
     price,
@@ -27,7 +27,7 @@ const RoomCard = ({ room }) => {
         <h4 className="title">{title}</h4>
         <p className="details">{details}</p>
         <div className="other-info">
-          <Meta iconName={"FaHotel"}>{total_rooms} Total Rooms</Meta>
+          <Meta iconName={"FaHotel"}>{total_room} Rooms</Meta>
           <Meta iconName={"FaUsers"}>{person} Person</Meta>
           <Meta iconName={"FaBath"}>{bathroom} Bath</Meta>
         </div>
