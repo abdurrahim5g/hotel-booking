@@ -11,6 +11,7 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import SignOut from "../Pages/SignOut/SignOut";
 import BookingPage from "../Pages/BookingPage/BookingPage";
+import Procted from "../components/Procted/Procted";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,11 @@ const router = createBrowserRouter([
         loader: ({ params }) => {
           return params.id;
         },
-        element: <BookingPage> </BookingPage>,
+        element: (
+          <Procted>
+            <BookingPage> </BookingPage>
+          </Procted>
+        ),
       },
       {
         path: "/login",

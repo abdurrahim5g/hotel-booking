@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import google from "../../assets/images/continue-with-google.png";
 import { useState } from "react";
@@ -9,6 +9,9 @@ const Login = () => {
   const [error, setError] = useState(false);
   const { signInWithPass, signInWithProvider } = useAuthContex();
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from || "/";
+  console.log(from);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -31,7 +34,7 @@ const Login = () => {
         .then((result) => {
           console.log(result.user);
           form.reset();
-          navigate("/home");
+          navigate(from, { replace: true });
         })
         .catch((err) => {
           form.reset();
@@ -48,7 +51,7 @@ const Login = () => {
   const handleProviderSignIn = (provider) => {
     signInWithProvider(provider)
       .then(() => {
-        navigate("/home");
+        navigate(from);
       })
       .catch((err) => {
         setError(err.code);
