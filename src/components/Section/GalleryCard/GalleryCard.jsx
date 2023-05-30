@@ -36,7 +36,7 @@ const GalleryCard = () => {
               }}
               pagination={true}
               modules={[EffectCoverflow, Pagination]}
-              className="mySwiper"
+              className="gallery-slider"
             >
               {roomImages?.map((room, index) => (
                 <SwiperSlide key={index}>
