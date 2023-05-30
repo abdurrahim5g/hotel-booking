@@ -1,7 +1,13 @@
+import { useAuthContex } from "../../Contex/AuthContexProvider/AuthContexProvider";
 import "./SignOut.css";
 
 const SignOut = () => {
-  return <div className="sign-out-page">Signout Page</div>;
+  const { user } = useAuthContex();
+  return (
+    <div className="sign-out-page" style={{ paddingTop: "100px" }}>
+      {user.name}
+    </div>
+  );
 };
 
 export default SignOut;
