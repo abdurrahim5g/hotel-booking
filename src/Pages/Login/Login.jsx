@@ -90,7 +90,8 @@ const Login = () => {
               <button type="submit">Login</button>
             </div>
             <p>
-              New to Ema-john? <Link to={"/sign-up"}>Create New Account</Link>
+              New to Hotel Booking?{" "}
+              <Link to={"/sign-up"}>Create New Account</Link>
             </p>
             <div className="divider">
               <span className="line"></span>
