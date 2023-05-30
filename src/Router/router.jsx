@@ -10,6 +10,7 @@ import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import SignOut from "../Pages/SignOut/SignOut";
+import BookingPage from "../Pages/BookingPage/BookingPage";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,13 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/book/:id",
+        loader: ({ params }) => {
+          return params.id;
+        },
+        element: <BookingPage> </BookingPage>,
       },
       {
         path: "/login",

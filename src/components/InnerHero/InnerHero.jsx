@@ -2,11 +2,13 @@ import "./InnerHero.css";
 import bg from "../../assets/images/hero/hero-1.jpg";
 
 // eslint-disable-next-line react/prop-types
-const InnerHero = ({ children }) => {
+const InnerHero = ({ children, img }) => {
   return (
     <section
       className="inner-hero-section"
-      style={{ background: `url(${bg}) no-repeat center bottom / cover` }}
+      style={{
+        background: `url(${img ? img : bg}) no-repeat center bottom / cover`,
+      }}
     >
       <div className="container">
         <div className="row">

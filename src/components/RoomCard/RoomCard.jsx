@@ -5,6 +5,7 @@ import "./RoomCard.css";
 
 const RoomCard = ({ room }) => {
   const {
+    id,
     img,
     title,
     details,
@@ -32,7 +33,7 @@ const RoomCard = ({ room }) => {
           <Meta iconName={"FaBath"}>{bathroom} Bath</Meta>
         </div>
         <div className="book-room">
-          <Link to="#">Book this room</Link>
+          <Link to={`/book/${id}`}>Book this room</Link>
         </div>
       </div>
     </div>
