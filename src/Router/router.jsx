@@ -68,7 +68,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/account",
-        element: <MyAccountPage />,
+        element: (
+          <Procted>
+            <MyAccountPage />
+          </Procted>
+        ),
       },
     ],
   },
