@@ -1,10 +1,15 @@
 import { Navigate, useLocation } from "react-router-dom";
 import { useAuthContex } from "../../Contex/AuthContexProvider/AuthContexProvider";
+import Loading from "../Loading/Loading";
 
 // eslint-disable-next-line react/prop-types
 const Procted = ({ children }) => {
-  const { user } = useAuthContex();
+  const { user, loading } = useAuthContex();
   const location = useLocation();
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   if (user?.uid) {
     return children;

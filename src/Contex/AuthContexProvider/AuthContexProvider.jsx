@@ -15,6 +15,7 @@ export const useAuthContex = () => useContext(AuthContex);
 // eslint-disable-next-line react/prop-types
 const AuthContexProvider = ({ children }) => {
   const [user, setUser] = useState({ name: "Abdur rahim" });
+  const [loading, setLoading] = useState(true);
 
   const auth = getAuth(app);
 
@@ -34,6 +35,7 @@ const AuthContexProvider = ({ children }) => {
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false);
       console.log(currentUser);
     });
 
@@ -43,6 +45,7 @@ const AuthContexProvider = ({ children }) => {
 
   const authInfo = {
     user,
+    loading,
     signUpWithPass,
     signInWithPass,
     signInWithProvider,
