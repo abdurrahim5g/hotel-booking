@@ -96,6 +96,13 @@
   text-decoration: none;
 }
 
+.error-message {
+  display: block;
+  margin: 10px 0 -10px;
+  text-align: center;
+  color: #fd6d00;
+}
+
 /* Responsive styles
 ++++++++++++++++++++++++ */
 @media all and (max-width: 767px) {
