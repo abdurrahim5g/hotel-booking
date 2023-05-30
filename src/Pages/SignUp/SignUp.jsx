@@ -4,11 +4,23 @@ import google from "../../assets/images/continue-with-google.png";
 import { useState } from "react";
 import { useAuthContex } from "../../Contex/AuthContexProvider/AuthContexProvider";
 import { GoogleAuthProvider, updateProfile } from "firebase/auth";
+import Loading from "../../components/Loading/Loading";
 
 const SignUp = () => {
   const [error, setError] = useState(false);
-  const { signUpWithPass, signInWithProvider, auth } = useAuthContex();
+  const { signUpWithPass, signInWithProvider, auth, loading, user } =
+    useAuthContex();
   const navigate = useNavigate();
+
+  // if user exist then go to home page
+  if (loading) {
+    return <Loading />;
+  }
+
+  if (user?.uid) {
+    <Loading />;
+    return navigate("/");
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
