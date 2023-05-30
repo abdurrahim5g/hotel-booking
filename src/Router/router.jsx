@@ -9,9 +9,10 @@ import Blogs from "../Pages/Blogs/Blogs";
 import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
-import SignOut from "../Pages/SignOut/SignOut";
+// import SignOut from "../Pages/SignOut/SignOut";
 import BookingPage from "../Pages/BookingPage/BookingPage";
 import Procted from "../components/Procted/Procted";
+import MyAccountPage from "../Pages/MyAccountPage/MyAccountPage";
 
 const router = createBrowserRouter([
   {
@@ -66,8 +67,8 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "/sign-out",
-        element: <SignOut />,
+        path: "/account",
+        element: <MyAccountPage />,
       },
     ],
   },

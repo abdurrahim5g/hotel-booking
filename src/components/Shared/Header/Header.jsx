@@ -4,9 +4,11 @@ import logo from "../../../assets/images/logo-light.png";
 import { Container } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { useAuthContex } from "../../../Contex/AuthContexProvider/AuthContexProvider";
 
 const Header = () => {
   const [hide, setHide] = useState(true);
+  const { user } = useAuthContex();
   return (
     <header className="header-component">
       <Container fluid>
@@ -41,9 +43,15 @@ const Header = () => {
               <NavLink to="/listings">listings</NavLink>
               <NavLink to="/gallery">gallery</NavLink>
               <NavLink to="/contact">contact</NavLink>
-              <NavLink to="/sign-out">Sign Out</NavLink>
-              <NavLink to="/login">login</NavLink>
-              <NavLink to="/sign-up">sign up</NavLink>
+
+              {user?.uid ? (
+                <NavLink to="/account">My Account</NavLink>
+              ) : (
+                <>
+                  <NavLink to="/login">login</NavLink>
+                  <NavLink to="/sign-up">sign up</NavLink>
+                </>
+              )}
             </div>
           </div>
         </nav>
