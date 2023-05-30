@@ -1,0 +1,13 @@
+.blogs-row img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.single-article {
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+}
+
+.article-body {
+  margin-top: 20px;
+}
