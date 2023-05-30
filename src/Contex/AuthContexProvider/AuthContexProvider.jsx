@@ -52,6 +52,7 @@ const AuthContexProvider = ({ children }) => {
   const authInfo = {
     user,
     loading,
+    auth,
     signUpWithPass,
     signInWithPass,
     signInWithProvider,

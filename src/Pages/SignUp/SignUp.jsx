@@ -3,11 +3,11 @@ import "./SignUp.css";
 import google from "../../assets/images/continue-with-google.png";
 import { useState } from "react";
 import { useAuthContex } from "../../Contex/AuthContexProvider/AuthContexProvider";
-import { GoogleAuthProvider } from "firebase/auth";
+import { GoogleAuthProvider, updateProfile } from "firebase/auth";
 
 const SignUp = () => {
   const [error, setError] = useState(false);
-  const { signUpWithPass, signInWithProvider } = useAuthContex();
+  const { signUpWithPass, signInWithProvider, auth } = useAuthContex();
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -30,6 +30,9 @@ const SignUp = () => {
       signUpWithPass(email, password)
         .then((result) => {
           console.log(result.user);
+          updateProfile(auth.currentUser, {
+            displayName: name,
+          });
           form.reset();
           navigate("/home");
         })
